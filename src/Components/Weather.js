@@ -71,7 +71,7 @@ if(recent.length > 5){
     if (this.state.city !== "") {
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&limit=5&appid=a6ae94e4a326c6366a942a0ef0f0cedf&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&limit=5&appid=a6ae94e4a326c6366a942a0ef0f0cedf&units=metric`
         )
         .then((res) => {
           this.setState({
@@ -87,7 +87,7 @@ if(recent.length > 5){
     } else if (this.state.lat !== "" && this.state.lon !== "") {
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.lon}&appid=a6ae94e4a326c6366a942a0ef0f0cedf&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.lon}&appid=a6ae94e4a326c6366a942a0ef0f0cedf&units=metric`
         )
         .then((res) => {
           this.setState({
@@ -107,7 +107,7 @@ if(recent.length > 5){
   recentSearchHandler =(city)=>{
     axios
     .get(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&limit=5&appid=a6ae94e4a326c6366a942a0ef0f0cedf&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&limit=5&appid=a6ae94e4a326c6366a942a0ef0f0cedf&units=metric`
     )
     .then((res) => {
       this.setState({
