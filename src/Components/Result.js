@@ -19,7 +19,7 @@ export default class Result extends Component {
               <tr>
                 <th scope="row">
                   <img className="d-inline"
-                    src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+                    src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
                     alt="WeatherIcon"
                   />
                   <h5 className="me-3">{data.main.temp} &deg;C</h5>
